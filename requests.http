@@ -1,0 +1,25 @@
+### Get dummies
+GET http://localhost:8000/dummies
+
+### Create dummy
+POST http://localhost:8000/dummies
+Content-Type: application/json
+
+{
+  "title": "this is yet another test dummy",
+  "createdAt": "2023-01-31T19:38:19.464Z"
+}
+
+### Update dummy
+PUT http://localhost:8000/dummies/1
+Content-Type: application/json
+
+{
+  "title": "this is an UPDATED test dummy"
+}
+
+### Get dummy
+GET http://localhost:8000/dummies/2
+
+### Delete dummy
+DELETE http://localhost:8000/dummies/1
